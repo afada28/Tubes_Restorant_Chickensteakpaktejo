@@ -11,9 +11,9 @@ return [
     | Default Log Channel
     |--------------------------------------------------------------------------
     |
-    | This option defines the default log channel that gets used when writing
-    | messages to the logs. The name specified in this option should match
-    | one of the channels defined in the "channels" configuration array.
+    | Opsi ini mendefinisikan saluran log default yang akan digunakan saat menulis
+    | pesan ke log. Nama yang ditentukan dalam opsi ini harus sesuai dengan salah
+    | satu saluran yang didefinisikan dalam array konfigurasi "channels".
     |
     */
 
@@ -24,9 +24,9 @@ return [
     | Deprecations Log Channel
     |--------------------------------------------------------------------------
     |
-    | This option controls the log channel that should be used to log warnings
-    | regarding deprecated PHP and library features. This allows you to get
-    | your application ready for upcoming major versions of dependencies.
+    | Opsi ini mengontrol saluran log yang harus digunakan untuk mencatat peringatan
+    | terkait fitur PHP dan pustaka yang sudah tidak digunakan lagi. Ini memungkinkan
+    | Anda untuk mempersiapkan aplikasi Anda untuk versi besar dari dependensi yang akan datang.
     |
     */
 
@@ -40,13 +40,11 @@ return [
     | Log Channels
     |--------------------------------------------------------------------------
     |
-    | Here you may configure the log channels for your application. Out of
-    | the box, Laravel uses the Monolog PHP logging library. This gives
-    | you a variety of powerful log handlers / formatters to utilize.
+    | Di sini Anda dapat mengonfigurasi saluran log untuk aplikasi Anda. Laravel menggunakan
+    | pustaka log Monolog PHP, yang menyediakan berbagai handler dan formatter yang kuat.
     |
-    | Available Drivers: "single", "daily", "slack", "syslog",
-    |                    "errorlog", "monolog",
-    |                    "custom", "stack"
+    | Driver yang Tersedia: "single", "daily", "slack", "syslog",
+    |                        "errorlog", "monolog", "custom", "stack"
     |
     */
 
@@ -120,3 +118,4 @@ return [
     ],
 
 ];
+

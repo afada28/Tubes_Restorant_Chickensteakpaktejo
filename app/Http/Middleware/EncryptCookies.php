@@ -12,6 +12,11 @@ class EncryptCookies extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        //
+        // Cookie preferensi tema restoran
+        'theme',
+
+        // Cookie untuk pengaturan bahasa pengguna
+        'locale',
     ];
 }
+

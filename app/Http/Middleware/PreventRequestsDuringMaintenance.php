@@ -12,6 +12,14 @@ class PreventRequestsDuringMaintenance extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        //
+        // Halaman utama restoran untuk pemberitahuan pelanggan
+        '/home',
+
+        // Endpoint API untuk memantau status sistem
+        '/api/status',
+
+        // Halaman statis informasi cabang restoran
+        '/branches-info',
     ];
 }
+

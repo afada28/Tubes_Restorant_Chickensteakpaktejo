@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/home';
+    public const HOME = '/dashboard'; // Ubah path untuk menyesuaikan dashboard restoran
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
@@ -27,12 +27,19 @@ class RouteServiceProvider extends ServiceProvider
         $this->configureRateLimiting();
 
         $this->routes(function () {
+            // Rute API untuk sistem restoran
             Route::middleware('api')
                 ->prefix('api')
                 ->group(base_path('routes/api.php'));
 
+            // Rute untuk antarmuka web restoran
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+
+            // Rute khusus untuk manajemen restoran Chicken Steak Pak Tejo
+            Route::middleware('web')
+                ->prefix('restaurant')
+                ->group(base_path('routes/restaurant.php')); // Tambahkan file rute baru
         });
     }
 
@@ -41,8 +48,5 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function configureRateLimiting(): void
     {
-        RateLimiter::for('api', function (Request $request) {
-            return Limit::perMinute(60)->by($request->user()?->id ?: $request->ip());
-        });
-    }
-}
+
+

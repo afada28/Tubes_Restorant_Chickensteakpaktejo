@@ -9,9 +9,9 @@ return [
     | Default Cache Store
     |--------------------------------------------------------------------------
     |
-    | This option controls the default cache connection that gets used while
-    | using this caching library. This connection is used when another is
-    | not explicitly specified when executing a given caching function.
+    | Opsi ini mengontrol koneksi cache default yang digunakan saat
+    | menggunakan pustaka cache ini. Koneksi ini digunakan saat koneksi
+    | lain tidak ditentukan secara eksplisit saat menjalankan fungsi caching.
     |
     */
 
@@ -22,9 +22,9 @@ return [
     | Cache Stores
     |--------------------------------------------------------------------------
     |
-    | Here you may define all of the cache "stores" for your application as
-    | well as their drivers. You may even define multiple stores for the
-    | same cache driver to group types of items stored in your caches.
+    | Di sini Anda dapat mendefinisikan semua "store" cache untuk aplikasi Anda
+    | serta drivernya. Anda bahkan dapat mendefinisikan beberapa store untuk
+    | satu driver cache untuk mengelompokkan tipe item yang disimpan dalam cache.
     |
     | Supported drivers: "apc", "array", "database", "file",
     |         "memcached", "redis", "dynamodb", "octane", "null"
@@ -99,12 +99,13 @@ return [
     | Cache Key Prefix
     |--------------------------------------------------------------------------
     |
-    | When utilizing the APC, database, memcached, Redis, or DynamoDB cache
-    | stores there might be other applications using the same cache. For
-    | that reason, you may prefix every cache key to avoid collisions.
+    | Saat menggunakan penyimpanan cache APC, database, memcached, Redis, atau DynamoDB
+    | mungkin ada aplikasi lain yang menggunakan cache yang sama. Oleh karena itu,
+    | Anda dapat memberi prefix pada setiap kunci cache untuk menghindari konflik.
     |
     */
 
     'prefix' => env('CACHE_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_cache_'),
 
 ];
+

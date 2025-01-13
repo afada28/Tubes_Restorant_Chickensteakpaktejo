@@ -12,11 +12,16 @@ class ValidateSignature extends Middleware
      * @var array<int, string>
      */
     protected $except = [
-        // 'fbclid',
-        // 'utm_campaign',
-        // 'utm_content',
-        // 'utm_medium',
-        // 'utm_source',
-        // 'utm_term',
+        // Mengabaikan parameter pelacakan dan pemasaran
+        'fbclid',          // Facebook Click ID
+        'utm_campaign',    // Kampanye pemasaran
+        'utm_content',     // Konten pemasaran
+        'utm_medium',      // Media pemasaran
+        'utm_source',      // Sumber pemasaran
+        'utm_term',        // Kata kunci pemasaran
+        'promo_code',      // Kode promo pelanggan
+        'ref',             // Parameter referensi
+        'tracking_id',     // ID pelacakan pesanan
     ];
 }
+

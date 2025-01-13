@@ -15,6 +15,12 @@ class TrustHosts extends Middleware
     {
         return [
             $this->allSubdomainsOfApplicationUrl(),
+
+            // Menambahkan subdomain yang dipercaya untuk sistem restoran
+            'admin.chickensteakpaktejo.com',
+            'staff.chickensteakpaktejo.com',
+            'customer.chickensteakpaktejo.com',
         ];
     }
 }
+

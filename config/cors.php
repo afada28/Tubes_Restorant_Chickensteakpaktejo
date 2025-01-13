@@ -7,11 +7,11 @@ return [
     | Cross-Origin Resource Sharing (CORS) Configuration
     |--------------------------------------------------------------------------
     |
-    | Here you may configure your settings for cross-origin resource sharing
-    | or "CORS". This determines what cross-origin operations may execute
-    | in web browsers. You are free to adjust these settings as needed.
+    | Di sini Anda dapat mengonfigurasi pengaturan untuk berbagi sumber daya lintas
+    | atau "CORS". Ini menentukan operasi lintas sumber daya yang dapat dieksekusi
+    | di browser web. Anda bebas menyesuaikan pengaturan ini sesuai kebutuhan.
     |
-    | To learn more: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+    | Untuk mempelajari lebih lanjut: https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
     |
     */
 
@@ -32,3 +32,4 @@ return [
     'supports_credentials' => false,
 
 ];
+

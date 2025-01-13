@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-// use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Gate;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider
@@ -23,6 +23,18 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+        // Menambahkan Gates untuk sistem manajemen restoran Chicken Steak Pak Tejo
+        Gate::define('is-admin', function ($user) {
+            return $user->role === 'admin';
+        });
+
+        Gate::define('is-cashier', function ($user) {
+            return $user->role === 'cashier';
+        });
+
+        Gate::define('is-customer', function ($user) {
+            return $user->role === 'customer';
+        });
     }
 }
+

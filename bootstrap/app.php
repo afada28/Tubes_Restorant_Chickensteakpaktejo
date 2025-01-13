@@ -5,9 +5,9 @@
 | Create The Application
 |--------------------------------------------------------------------------
 |
-| The first thing we will do is create a new Laravel application instance
-| which serves as the "glue" for all the components of Laravel, and is
-| the IoC container for the system binding all of the various parts.
+| Membuat instance aplikasi Laravel baru yang akan digunakan sebagai
+| "glue" untuk semua komponen Laravel. Aplikasi ini adalah IoC container
+| untuk sistem yang mengikat berbagai bagian bersama.
 |
 */
 
@@ -20,9 +20,10 @@ $app = new Illuminate\Foundation\Application(
 | Bind Important Interfaces
 |--------------------------------------------------------------------------
 |
-| Next, we need to bind some important interfaces into the container so
-| we will be able to resolve them when needed. The kernels serve the
-| incoming requests to this application from both the web and CLI.
+| Mengikat beberapa antarmuka penting ke dalam container. Kernel bertugas
+| melayani permintaan masuk ke aplikasi baik dari web maupun CLI.
+| Penyesuaian ini memastikan semua komponen berjalan sesuai kebutuhan
+| sistem manajemen restoran Chicken Steak Pak Tejo.
 |
 */
 
@@ -46,10 +47,12 @@ $app->singleton(
 | Return The Application
 |--------------------------------------------------------------------------
 |
-| This script returns the application instance. The instance is given to
-| the calling script so we can separate the building of the instances
-| from the actual running of the application and sending responses.
+| Script ini mengembalikan instance aplikasi. Instance ini diberikan ke
+| script pemanggil agar proses membangun instance dapat dipisahkan dari
+| eksekusi aplikasi dan pengiriman respons. Dikustomisasi untuk mendukung
+| operasional Chicken Steak Pak Tejo.
 |
 */
 
 return $app;
+

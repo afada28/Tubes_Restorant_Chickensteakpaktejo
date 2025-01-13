@@ -15,5 +15,9 @@ class TrimStrings extends Middleware
         'current_password',
         'password',
         'password_confirmation',
+        'restaurant_name',       // Nama restoran
+        'menu_item_description', // Deskripsi menu makanan
+        'special_instructions',  // Instruksi khusus pelanggan
     ];
 }
+

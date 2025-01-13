@@ -12,7 +12,12 @@ class TrustProxies extends Middleware
      *
      * @var array<int, string>|string|null
      */
-    protected $proxies;
+    protected $proxies = [
+        // Proxy tepercaya, seperti IP dari load balancer atau CDN
+        '192.168.1.1', // Contoh IP proxy internal restoran
+        '10.0.0.1',    // Contoh IP dari server internal
+        '127.0.0.1',   // Localhost untuk testing
+    ];
 
     /**
      * The headers that should be used to detect proxies.
@@ -26,3 +31,4 @@ class TrustProxies extends Middleware
         Request::HEADER_X_FORWARDED_PROTO |
         Request::HEADER_X_FORWARDED_AWS_ELB;
 }
+

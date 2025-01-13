@@ -7,11 +7,11 @@ return [
     | Default Hash Driver
     |--------------------------------------------------------------------------
     |
-    | This option controls the default hash driver that will be used to hash
-    | passwords for your application. By default, the bcrypt algorithm is
-    | used; however, you remain free to modify this option if you wish.
+    | Opsi ini mengontrol driver hash default yang akan digunakan untuk mengenkripsi
+    | kata sandi di aplikasi Anda. Secara default, algoritma bcrypt digunakan;
+    | namun, Anda bebas untuk mengubah opsi ini jika diinginkan.
     |
-    | Supported: "bcrypt", "argon", "argon2id"
+    | Didukung: "bcrypt", "argon", "argon2id"
     |
     */
 
@@ -22,9 +22,9 @@ return [
     | Bcrypt Options
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the configuration options that should be used when
-    | passwords are hashed using the Bcrypt algorithm. This will allow you
-    | to control the amount of time it takes to hash the given password.
+    | Di sini Anda dapat menentukan konfigurasi opsi yang harus digunakan saat
+    | kata sandi di-hash menggunakan algoritma Bcrypt. Ini memungkinkan Anda
+    | untuk mengontrol berapa lama waktu yang dibutuhkan untuk mengenkripsi kata sandi.
     |
     */
 
@@ -37,9 +37,9 @@ return [
     | Argon Options
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the configuration options that should be used when
-    | passwords are hashed using the Argon algorithm. These will allow you
-    | to control the amount of time it takes to hash the given password.
+    | Di sini Anda dapat menentukan konfigurasi opsi yang harus digunakan saat
+    | kata sandi di-hash menggunakan algoritma Argon. Ini memungkinkan Anda
+    | untuk mengontrol berapa lama waktu yang dibutuhkan untuk mengenkripsi kata sandi.
     |
     */
 
@@ -50,3 +50,4 @@ return [
     ],
 
 ];
+
